@@ -2,8 +2,13 @@ body {
   background-color: #fafafa;
 }
 
-h2 {
-  padding-top: 0.5em;
+h3 {
+  padding-top: 2em;
+  text-decoration: dotted;
+}
+
+.footer {
+  padding-bottom: 4em;
 }
 
 header {
@@ -27,7 +32,7 @@ header {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  min-height: 200px;
+  min-height: 300px;
   background-color: #ffffff;
 }
 
@@ -37,6 +42,18 @@ header {
 
 input[type="submit"] {
   background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 5px 62px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: lightcoral;
   border: none;
   color: white;
   padding: 5px 62px;

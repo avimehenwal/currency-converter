@@ -11,7 +11,7 @@ interface queryString {
 class Backend {
   api: AxiosInstance
   baseURL: string = 'https://api.exchangerate.host'
-  timeout: number = 1000
+  timeout: number = 1000000
   headers: object = { 'Content-Type': 'application/json' }
 
   constructor() {
@@ -32,7 +32,7 @@ class Backend {
     }
   }
 
-  convertCurrency = async () => {
+  convertCurrency = () => {
     const qs: queryString = {
       base: 'USD',
       symbols: 'USD,EUR,CZK',

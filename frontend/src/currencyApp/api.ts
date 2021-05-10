@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios'
 
 // https://exchangerate.host/#/
-interface queryString {
+export interface queryString {
   base: string;
   symbols: string;
   amount: number;
@@ -26,21 +26,22 @@ class Backend {
     try {
       const response = await this.api.get("/latest", { params: queryString });
       const data = await response.data
+      // console.dir(data)
       return data
     } catch (error) {
       console.error(error);
     }
   }
 
-  convertCurrency = () => {
-    const qs: queryString = {
-      base: 'USD',
-      symbols: 'USD,EUR,CZK',
-      amount: 1200,
-      places: 2
-    }
-    return this.getCall(qs)
+  convertCurrency = (params: queryString = {
+    base: 'USD',
+    symbols: 'USD,EUR,CZK',
+    amount: 1200,
+    places: 2
+  }) => {
+    return this.getCall(params)
   }
+
 
 }
 

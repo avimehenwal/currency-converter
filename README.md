@@ -2,7 +2,15 @@
 
 ![demo](./artwork/currency.gif)
 
-:libra: with **jest** api tests
+## Features
+
+- [x] All native HTML, no UI frameowork used
+- [x] :libra: API test using jest
+- [x] Form handling with react
+- [x] Functional Components in typescript
+- [x] Coding best practises used
+- [ ] Track all conversions, historic data
+- [ ] State management pattern
 
 #### :v: Get in touch with me
 
